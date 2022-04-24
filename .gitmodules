@@ -1,0 +1,12 @@
+[submodule "mobile"]
+	path = "mobile"
+	url = "git@github.com:OneEyed1366/training-app.git"
+	branch = "mobile"
+[submodule "web/client"]
+	path = "web/client"
+	url = "git@github.com:OneEyed1366/training-app.git"
+	branch = "client"
+[submodule "web/server"]
+	path = "web/server"
+	url = "git@github.com:OneEyed1366/training-app.git"
+	branch = "server"
