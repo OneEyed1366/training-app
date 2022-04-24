@@ -46,9 +46,15 @@ export default class StartViewButton extends IProperties {
   color: #ffffff;
   font-weight: 300;
   border: 0;
+  font-size: 1.2rem;
+  transition: all ease 0.2s;
 
   &.male {
     background-color: var(--blue);
+
+    &:hover {
+      background-color: darken(#ffffff, 25%);
+    }
   }
   &.female {
     background-color: var(--orange);

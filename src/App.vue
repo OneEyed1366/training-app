@@ -18,6 +18,7 @@ export default class App extends Vue {
   }
 
   mounted() {
+    this.detectLayout(window.innerWidth);
     window.addEventListener("resize", this.onResize);
   }
 

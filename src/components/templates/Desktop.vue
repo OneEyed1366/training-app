@@ -1,28 +1,23 @@
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
+import UniversalTemplate from "./Universal.vue";
 
-const IProperties = Vue.extend({
+@Component({
   name: "DesktopTemplate",
-});
-
-@Component
-export default class DesktopTemplate extends IProperties {
+})
+export default class DesktopTemplate extends UniversalTemplate {
   public className = "DesktopTemplate";
 }
 </script>
 
 <template>
-  <article :class="className">
+  <article :class="className" :style="computedStyles">
     <slot name="navbar" />
     <slot name="body" />
   </article>
 </template>
 
 <style lang="scss">
-html {
-  font-size: 25px;
-}
-
 .DesktopTemplate {
   display: flex;
   flex-flow: row nowrap;

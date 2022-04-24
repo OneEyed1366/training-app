@@ -1,32 +1,28 @@
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component } from "vue-property-decorator";
+import UniversalTemplate from "./Universal.vue";
 
-const IProperties = Vue.extend({
+@Component({
   name: "MobileLayout",
   props: {},
-});
-
-@Component
-export default class MobileLayout extends IProperties {
+})
+export default class MobileLayout extends UniversalTemplate {
   public className = "MobileLayout";
 }
 </script>
 
 <template>
-  <article :class="className">
+  <article :class="className" :style="computedStyles">
     <slot name="body">Body content</slot>
     <slot name="navbar">Navbar content</slot>
   </article>
 </template>
 
 <style lang="scss">
-html {
-  font-size: 30px;
-}
-
 .MobileLayout {
   display: flex;
   flex: 1 1 100%;
   flex-flow: column nowrap;
+  justify-content: center;
 }
 </style>

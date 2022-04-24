@@ -38,6 +38,7 @@ export default class StartView extends IProperties {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  width: 100%;
 }
 
 .StartView {

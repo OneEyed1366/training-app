@@ -18,6 +18,5 @@ export default class StartViewLogo extends Vue {
 <style lang="scss" scoped>
 .StartView__Logo {
   margin: 0 auto;
-  width: 100%;
 }
 </style>
