@@ -11,6 +11,10 @@ const IProperties = Vue.extend({
       type: String,
       required: true,
     },
+    text: {
+      type: String,
+      required: true,
+    },
   },
 });
 
